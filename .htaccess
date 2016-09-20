@@ -1,0 +1,12 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^posts/(\d+)$       index.php?post_id=posts/$1    [NC,L]
+RewriteRule ^pages/([-\w]+)$    index.php?post_id=pages/$1    [NC,L]  
+RewriteRule ^page/(\d+)$        index.php?page=$1       [NC,L]
+
+<files .htaccess>
+    order allow,deny
+    deny from all
+</files>

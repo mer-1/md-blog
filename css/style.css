@@ -1,0 +1,468 @@
+/* Base Styles
+============================================= */
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; 
+  background-color: #fff;
+}
+
+/* Typography
+============================================= */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300; 
+}
+
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.0rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 2.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 1.6rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.2rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.0rem; line-height: 1.6;  letter-spacing: 0; }
+
+p { margin-top: 0; }
+
+/* Links
+============================================= */
+a {
+    color: #000; 
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    border-bottom: 2px solid rgba(47, 49, 74, 0.81);
+}
+
+/* Grid
+============================================= */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 544px) {
+  .container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 544px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 544px) {
+  .col-sm-1 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 8.333333%;
+  }
+  .col-sm-2 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 16.666667%;
+  }
+  .col-sm-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 25%;
+  }
+  .col-sm-4 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 33.333333%;
+  }
+  .col-sm-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 41.666667%;
+  }
+  .col-sm-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 50%;
+  }
+  .col-sm-7 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 58.333333%;
+  }
+  .col-sm-8 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 66.666667%;
+  }
+  .col-sm-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 75%;
+  }
+  .col-sm-10 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 83.333333%;
+  }
+  .col-sm-11 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 91.666667%;
+  }
+  .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+/* Lists
+============================================= */
+ul {
+  list-style: circle inside; 
+}
+
+ol {
+  list-style: decimal inside; 
+}
+
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; 
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; 
+}
+
+li {
+  margin-bottom: 1rem; 
+}
+
+/* Code
+============================================= */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; 
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; 
+}
+
+/* Tables
+============================================= */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; 
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0; 
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0; 
+}
+
+/* Spacing
+============================================= */
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 1rem; 
+}
+
+/* Misc
+============================================= */
+hr {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  border-width: 0;
+  border-top: 3px solid #E1E1E1; 
+}
+
+/* A responsive image */
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.sidebar {
+    margin-bottom: 2em;
+}
+
+.sidebar h4 {
+    margin-bottom: .5em;
+}
+
+@media (min-width: 544px) {
+  .sidebar {
+      border-left: 1px solid #e1e1e1;
+      margin-bottom: 0;
+  }
+}
+
+.article-num {
+    font-style: italic;
+    font-size: .9em;
+    border: 1px dotted #ccc;
+    border-radius: 5%;
+    width: 90px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+ul.contact-list {
+    list-style: none;
+}
+
+/* Header
+============================================= */
+
+.hero {
+    background: url("/images/pexels-photo-175719.jpeg") no-repeat center center;
+    background-size: cover;
+    height: 45vh;
+    overflow: hidden; 
+    margin-bottom: 2em;
+}
+
+@media (min-width: 570px) {
+    .hero {
+        height: 25vh;
+    }
+}
+
+.hero h1 {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+}
+
+/* Content
+============================================= */
+.main-posts a {
+    text-decoration: underline;
+}
+
+.main-posts a:hover,
+.main-posts a:focus {
+    text-decoration: none;
+}
+
+/* Footer
+============================================= */
+
+footer {
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 4rem; 
+}
+
+@media (min-width: 544px) {
+    footer {
+        margin-top: 2em;
+    }
+}
+
+footer p.slogan {
+    color: #8f9296;
+    font-size: 1.8rem;
+    margin: 0 0 .5rem; 
+}
+  
+footer p.copywrite {
+    color: #8f9296;
+    margin: 0; 
+}
+
+footer ul.footer-list {
+    list-style: none;
+    color: #fff;
+    margin: 0;
+}
+  
+footer ul.footer-list li {
+    padding: .5rem 0;
+    margin: 0; 
+}
+
+footer ul.footer-list li {
+    display: block;
+}
+
+@media (min-width: 544px) {
+  footer ul.footer-list li {
+      display: inline-block;
+  }
+  
+  footer ul.footer-list li::after {
+      content: "|";
+      padding: 0 0.4rem 0 0.8rem;
+  }
+
+  footer ul.footer-list li:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem;
+  }
+}
+
+ul.pagination {
+    list-style: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+ul.pagination li {
+  display: inline-block;
+  border: 1px solid #cacaca;
+  padding: .1em .8em;
+  margin-left: .2em;
+}
+
+/* Simple solution: Fill in the parent container "ul.pagination li" */
+ul.pagination li span.current {
+    display: block;
+    padding: .1em .8em;
+    margin: -.1em -.8em;
+    background-color: rgba(0,0,0,.3);
+}
+
+ul.pagination li a {
+    text-decoration: none;
+}
+
+
+
+
+
